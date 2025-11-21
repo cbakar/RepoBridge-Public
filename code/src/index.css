@@ -1,0 +1,29 @@
+.carousel {
+  display: flex;
+  height: 60vh; /* or whatever you had */
+}
+
+.card {
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  transition: flex 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card .txt {
+  opacity: 0;
+  padding: 10px;
+  margin: 0;
+  transition: opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+.card.active {
+  flex: 4;
+}
+
+.card.active .txt {
+  opacity: 1;
+  margin-top: 0;
+}
