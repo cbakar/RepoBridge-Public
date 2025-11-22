@@ -6,7 +6,6 @@ export default defineConfig({
   base: '/RepoBridge-Public/',
   plugins: [react()],
   build: {
-    // Output the production build to the repo-level docs folder for GitHub Pages
     outDir: '../docs',
     emptyOutDir: true,
   },
